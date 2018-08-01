@@ -1,0 +1,29 @@
+Package: kphon
+Type: Package
+Title: Helper functions for the Kaytetye Phonological Corpus
+Version: 0.1.0
+Authors@R: c(person("Nay", "San", role = c("aut", "cre"),
+                     email = "naymyo89@gmail.com"))
+Maintainer: Nay San <naymyo89@gmail.com>
+Description: Helper functions for the Kaytetye Phonological Corpus
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends:
+    digest,
+    dplyr,
+    glue,
+    phonpack,
+    purrr,
+    readr,
+    stringr,
+    tidyr,
+    zoo
+Suggests: 
+    knitr,
+    rmarkdown,
+    digest
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Imports: 
+    magrittr
