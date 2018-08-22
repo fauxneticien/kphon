@@ -18,6 +18,12 @@ library(kphon)
 
 Helper functions for the Kaytetye Phonological Database (kphon).
 
+# Installation
+```{r install step, eval=FALSE}
+# If you don't have the devtools package, then do 'install.packages("devtools")' first
+devtools::install_github("fauxneticien/kphon")
+```
+
 # Examples
 
 Create standardised export CSV and wav files for kphon.
