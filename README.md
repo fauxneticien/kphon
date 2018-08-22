@@ -3,11 +3,28 @@
 
 # kphon
 
-Helper functions for the Kaytetye Phonological Database (kphon).
+Helper functions for the Kaytetye Phonological Database
+(kphon).
+
+# Installation
+
+``` r
+# If you don't have the devtools package, then do 'install.packages("devtools")' first
+devtools::install_github("fauxneticien/kphon")
+```
 
 # Examples
 
-Create standardised export CSV and wav files for kphon.
+Create standardised export CSV and wav files for kphon, which are of the
+form:
+
+| orthography    | gl\_annotated  | transcription   | annotator | kphon\_export                    | annotation\_source                |     xmin |     xmax |
+| :------------- | :------------- | :-------------- | :-------- | :------------------------------- | :-------------------------------- | -------: | -------: |
+| atnyemilparele | south.wind-ERG | ɐcɲejmejlpɐɻələ | MP        | atnyemilparele\_AR\_cf125a3a.wav | southwindpassage\_AR\_MP.TextGrid | 2.125691 | 3.140994 |
+| kape           | and            | kɐpə            | MP        | kape\_AR\_29cf0b23.wav           | southwindpassage\_AR\_MP.TextGrid | 3.223741 | 3.606705 |
+| aherrkele      | sun-ERG        | ɐːɾkələ         | MP        | aherrkele\_AR\_4bcff7be.wav      | southwindpassage\_AR\_MP.TextGrid | 3.606705 | 4.075386 |
+| tyampe         | too            | cɐmpə           | MP        | tyampe\_AR\_95ac9af5.wav         | southwindpassage\_AR\_MP.TextGrid | 4.075386 | 4.511355 |
+| ahenge         | fight          | ɐːŋə            | MP        | ahenge\_AR\_e67432f2.wav         | southwindpassage\_AR\_MP.TextGrid | 4.660752 | 4.950565 |
 
 **Step 0:** Load kphon library and set working directory
 

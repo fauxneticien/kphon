@@ -26,7 +26,17 @@ devtools::install_github("fauxneticien/kphon")
 
 # Examples
 
-Create standardised export CSV and wav files for kphon.
+Create standardised export CSV and wav files for kphon, which are of the form:
+
+```{r Show kphon CSV, echo=FALSE}
+knitr::kable(readr::read_csv("orthography,gl_annotated,transcription,annotator,kphon_export,annotation_source,xmin,xmax
+atnyemilparele,south.wind-ERG,ɐcɲejmejlpɐɻələ,MP,atnyemilparele_AR_cf125a3a.wav,southwindpassage_AR_MP.TextGrid,2.1256905074478105,3.140994243207525
+kape,and,kɐpə,MP,kape_AR_29cf0b23.wav,southwindpassage_AR_MP.TextGrid,3.2237406016823074,3.606705482796561
+aherrkele,sun-ERG,ɐːɾkələ,MP,aherrkele_AR_4bcff7be.wav,southwindpassage_AR_MP.TextGrid,3.606705482796561,4.07538582324225
+tyampe,too,cɐmpə,MP,tyampe_AR_95ac9af5.wav,southwindpassage_AR_MP.TextGrid,4.07538582324225,4.511354649921463
+ahenge,fight,ɐːŋə,MP,ahenge_AR_e67432f2.wav,southwindpassage_AR_MP.TextGrid,4.660752408376567,4.950564710693483"))
+```
+
 
 **Step 0:** Load kphon library and set working directory
 
