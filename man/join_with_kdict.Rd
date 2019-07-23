@@ -2,7 +2,7 @@
 % Please edit documentation in R/join_with_kdict.R
 \name{join_with_kdict}
 \alias{join_with_kdict}
-\title{Left-join data frame with Kaytetye dictionary database, based on column 'orthography' (default)}
+\title{Left-join a data frame with Kaytetye dictionary data, based on column 'orthography' (default)}
 \usage{
 join_with_kdict(df, by = "orthography")
 }
@@ -12,5 +12,5 @@ join_with_kdict(df, by = "orthography")
 \item{by}{common column between \code{df} and KDB data frame}
 }
 \description{
-Left-join data frame with Kaytetye dictionary database, based on column 'orthography' (default)
+Left-join a data frame with Kaytetye dictionary data, based on column 'orthography' (default)
 }

@@ -1,4 +1,4 @@
-#' Left-join data frame with Kaytetye dictionary database, based on column 'orthography' (default)
+#' Left-join a data frame with Kaytetye dictionary data, based on column 'orthography' (default)
 #'
 #' @param df a data frame
 #' @param by common column between \code{df} and KDB data frame
