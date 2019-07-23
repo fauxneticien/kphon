@@ -1,6 +1,6 @@
 #' Sync master audio directory with audio from all _kphon-export folders
 #'
-#' @param kphon_path path to kphon directory where _kphon-master.csv file and annotations directory exists
+#' @param kphon_path path to kphon directory where audio and annotations directories exist
 #' @param show_summary return summary (default is \code{TRUE}). Must explicitly supply \code{FALSE} to begin moving new files and deleting stale files.
 #'
 #' @export
@@ -8,7 +8,7 @@
 
 sync_kphon_audio <- function(kphon_path, show_summary = TRUE) {
 
-    kphon_master <- file.path(kphon_path, "_kphon-master.csv")
+    kphon_master <- file.path(kphon_path, "data", "kphon-master", "_kphon-master.csv")
     annots_dir   <- file.path(kphon_path, "annotations")
     audio_dir    <- file.path(kphon_path, "audio")
 

@@ -68,7 +68,7 @@ make_kphon_master <- function(kphon_path = ".", output_csv = FALSE) {
 
     if(output_csv) {
 
-        write_csv(master_df, file.path(kphon_path, "_kphon-master.csv"), na = "")
+        write_csv(master_df, file.path(kphon_path, "data", "kphon-master", "_kphon-master.csv"), na = "")
 
     } else {
 
