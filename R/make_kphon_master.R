@@ -47,7 +47,9 @@ make_kphon_master <- function(kphon_path = ".", script_path = NA, script_command
         ) %>%
         arrange(orthography)
 
-    script_path <- system.file("extdata/orth_to_ipa.pl", package = "kphon")
+    if(is.na(script_path)) {
+        script_path <- system.file("extdata/orth_to_ipa.pl", package = "kphon")
+    }
 
     input_path  <- tempfile(fileext = "txt")
     writeLines(master_df$orthography, input_path)
