@@ -57,7 +57,7 @@ make_kphon_master <- function(kphon_path = ".", script_path = NA, script_command
     output_path <- tempfile(fileext = "txt")
 
     message("Generating predicted underlying and surface forms from orthography...")
-    system(glue("perl '{script_path}' {input_path} {output_path}"))
+    system(glue("perl {script_path} {input_path} {output_path}"))
     predicted_df <- read_tsv(output_path, col_names = FALSE, col_types = "ccc")
 
     master_df$pred_phon <- predicted_df$X2
