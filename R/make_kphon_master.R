@@ -1,17 +1,19 @@
 #' Make kphon master file
 #'
 #' @param kphon_path local path to kphon directory in which 'annotations' directory exists
+#' @param script_path path to a script which takes orthographic forms as input and generates a tab-seperated file of underlying and surface forms. Default is \code{NA} to use the package internal \code{orth_to_ipa.pl} script.
+#' @param script_command the shell command required to run the script (e.g. \code{perl script.pl input.txt output.txt}). Default is \code{perl}.
 #' @param output_csv (over)write to _kphon-master.csv file? Default is false.
 #'
 #' @export
 #'
 
-make_kphon_master <- function(kphon_path = ".", output_csv = FALSE) {
+make_kphon_master <- function(kphon_path = ".", script_path = NA, script_command = "perl", output_csv = FALSE) {
 
-    if(!dir.exists("annotations")) { stop("Cannot find 'annotations' folder in current path.") }
+    if(!dir.exists(file.path(kphon_path, "annotations"))) { stop("Cannot find 'annotations' folder in current path.") }
 
     kphon_csvs <- list.files(
-        path = "annotations",
+        path = file.path(kphon_path, "annotations"),
         pattern = "_kphon-export.csv",
         recursive = TRUE,
         full.names = TRUE

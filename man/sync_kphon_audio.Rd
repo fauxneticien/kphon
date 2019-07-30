@@ -7,7 +7,7 @@
 sync_kphon_audio(kphon_path, show_summary = TRUE)
 }
 \arguments{
-\item{kphon_path}{path to kphon directory where _kphon-master.csv file and annotations directory exists}
+\item{kphon_path}{path to kphon directory where audio and annotations directories exist}
 
 \item{show_summary}{return summary (default is \code{TRUE}). Must explicitly supply \code{FALSE} to begin moving new files and deleting stale files.}
 }
