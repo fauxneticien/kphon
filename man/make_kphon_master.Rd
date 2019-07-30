@@ -4,13 +4,13 @@
 \alias{make_kphon_master}
 \title{Make kphon master file}
 \usage{
-make_kphon_master(kphon_path = ".", script_path = NA,
-  script_command = "perl", output_csv = FALSE)
+make_kphon_master(kphon_path = ".", script_path, script_command = "perl",
+  output_csv = FALSE)
 }
 \arguments{
 \item{kphon_path}{local path to kphon directory in which 'annotations' directory exists}
 
-\item{script_path}{path to a script which takes orthographic forms as input and generates a tab-seperated file of underlying and surface forms. Default is \code{NA} to use the package internal \code{orth_to_ipa.pl} script.}
+\item{script_path}{path to a script which takes orthographic forms as input and generates a tab-seperated file of underlying and surface forms.}
 
 \item{script_command}{the shell command required to run the script (e.g. \code{perl script.pl input.txt output.txt}). Default is \code{perl}.}
 
