@@ -70,7 +70,7 @@ make_kphon_master <- function(kphon_path = ".", script_path = NA, script_command
                annotation_source, xmin, xmax
         )
 
-    if(output_csv) {
+    if(is.character(output_csv)) {
 
         write_csv(master_df, file.path(kphon_path, "data", "kphon-master", "_kphon-master.csv"), na = "")
 

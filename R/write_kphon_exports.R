@@ -17,7 +17,7 @@ write_kphon_exports <- function(kphon_df, path, overwrite = FALSE, ffmpeg_path =
 
     stopifnot(dir.exists(path))
 
-    export_path <- normalizePath(file.path(path, "_kphon-export"))
+    export_path <- normalizePath(file.path(path, "_kphon-export", fsep = "/"))
 
     if(!dir.exists(export_path)) {
         dir.create(export_path)
